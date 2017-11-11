@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/motorola/griffin/griffin-vendor.mk)
 $(call inherit-product, device/motorola/griffin/device.mk)
 
-# Inherit some common ElixiumOE stuff.
-$(call inherit-product, vendor/elixium/common.mk)
+# Inherit some common Discovery stuff.
+$(call inherit-product, vendor/discovery/config/common_full_phone.mk)
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
@@ -34,7 +34,7 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_NAME := elix_griffin
+PRODUCT_NAME := discovery_griffin
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := griffin
 PRODUCT_MODEL := XT1650

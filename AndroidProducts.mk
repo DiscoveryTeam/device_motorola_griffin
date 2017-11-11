@@ -14,4 +14,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/elix_griffin.mk
+	$(LOCAL_DIR)/discovery.mk
